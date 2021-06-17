@@ -18,15 +18,20 @@
 </body>
 
 <script>
-    const numero = prompt("Digite um numero e tecle Enter");
-    if( numero==0 ) {
-        alert("0 é um número neutro, ou seja, não é um número nem positivo e nem negativo");
+    const numero = prompt("Digite um número e tecle Enter");
+    if( numero > 0 ) {
+        if( numero % 2 == 0) {
+            alert(numero + " é positivo e par");
+        }
+        else {
+            alert(numero + " é positivo e ímpar");
+        }
     }
-    else if( numero>0 ) {
-        alert("O número é positivo");
+    else if( numero == 0 ) {
+        alert(numero + " é um número neutro, ou seja, não é um número nem positivo e nem negativo");
     }
     else {
-        alert("O número é negativo");
+        alert(numero + " é negativo...");
     }
 </script>
 </html>
